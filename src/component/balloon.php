@@ -1,0 +1,47 @@
+<?php
+/**
+ * @package inc2734/wp-awesome-components
+ * @author inc2734
+ * @license GPL-2.0+
+ */
+
+return [
+	[
+		'id'    => 'balloon',
+		'label' => __( 'Balloon', 'inc2734-wp-awesome-components' ),
+		'html'  => sprintf(
+			'<div class="wpac-balloon">
+				<div class="wpac-balloon__person">
+					<div class="wpac-balloon__figure">
+						<img src="http://0.gravatar.com/avatar/cb3045d1eb66dda5eae9ae2f96edeee9?s=128&d=mm&r=g" alt="">
+					</div>
+					<div class="wpac-balloon__name">%1$s</div>
+				</div>
+				<div class="wpac-balloon__body">
+					%2$s
+				</div>
+			</div>',
+			esc_html__( 'Name', 'inc2734-wp-awesome-components' ),
+			esc_html__( 'Balloon', 'inc2734-wp-awesome-components' )
+		),
+	],
+	[
+		'id'    => 'balloon--reverse',
+		'label' => __( 'Balloon (Reverse)', 'inc2734-wp-awesome-components' ),
+		'html'  => sprintf(
+			'<div class="wpac-balloon wpac-balloon--reverse">
+				<div class="wpac-balloon__person">
+					<div class="wpac-balloon__figure">
+						<img src="http://0.gravatar.com/avatar/cb3045d1eb66dda5eae9ae2f96edeee9?s=128&d=mm&r=g" alt="">
+					</div>
+					<div class="wpac-balloon__name">%1$s</div>
+				</div>
+				<div class="wpac-balloon__body">
+					%2$s
+				</div>
+			</div>',
+			esc_html__( 'Name', 'inc2734-wp-awesome-components' ),
+			esc_html__( 'Balloon', 'inc2734-wp-awesome-components' )
+		),
+	],
+];

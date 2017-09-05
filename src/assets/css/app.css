@@ -1,0 +1,168 @@
+/**
+ * Modal launch button
+ */
+#button-wp-awesome-components {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+#button-wp-awesome-components .dashicons {
+  margin-right: 5px;
+}
+
+/**
+ * Modal
+ */
+.wpac-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.wpac-modal[aria-hidden="false"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/**
+ * Modal - container
+ */
+.wpac-modal__container {
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #fff;
+  max-width: 960px;
+  max-height: 80vh;
+}
+
+/**
+ * Modal - sidebar
+ */
+.wpac-modal__sidebar {
+  flex: 1 0 25%;
+  max-width: 25%;
+  background-color: #f3f3f3;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+  overflow: auto;
+}
+
+/**
+ * Modal - main
+ */
+.wpac-modal__main {
+  position: relative;
+  flex: 1 1 75%;
+  max-width: 75%;
+  padding: 20px;
+}
+
+/**
+ * Mordal close button
+ */
+#wpac-modal-close-btn {
+  position: absolute;
+  top: -26px;
+  right: 0;
+  cursor: pointer;
+  color: #fff;
+}
+
+/**
+ * Preview area
+ */
+.wpac-modal-preview {
+  display: none;
+}
+
+.wpac-modal-preview[aria-hidden="false"] {
+  display: block;
+}
+
+.wpac-modal-preview .mce-toolbar-grp,
+.wpac-modal-preview .mce-statusbar {
+ display: none;
+}
+
+/**
+ * Preview area - title
+ */
+.wpac-modal-preview__title {
+  margin: 0 0 1em;
+}
+
+/**
+ * Preview area - Disable TinyMce
+ */
+.wpac-modal-preview .mce-edit-area {
+  position: relative;
+}
+
+.wpac-modal-preview .mce-edit-area::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+}
+
+/**
+ * Preview area - content
+ */
+.wpac-modal-preview__content {
+  display: none;
+}
+
+/**
+ * Component selector
+ */
+.wpac-modal-selector {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #ddd;
+}
+
+/**
+ * Component selector - item
+ */
+.wpac-modal-selector__item {
+  margin: 0;
+  padding: 1em 0;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+.wpac-modal-selector__item[aria-selected="true"] {
+  font-weight: bold;
+}
+
+.wpac-modal-selector__item:hover,
+.wpac-modal-selector__item:active,
+.wpac-modal-selector__item:focus {
+  color: #999;
+}
+
+/**
+ * Action
+ */
+.wpac-modal__action {
+  margin-top: 1em;
+  text-align: right;
+}
