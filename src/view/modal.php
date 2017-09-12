@@ -23,7 +23,7 @@ foreach ( $components as $id => $component ) {
 		unset( $components[ $id ] );
 		continue;
 	}
-	$component['html'] = trim( $component['html'] );
+	$component['html'] = trim( str_replace( [ "\r", "\n" ], '', $component['html'] ) );
 
 	$components[ $id ] = array_filter( $component );
 }
@@ -53,6 +53,7 @@ if ( empty( $components ) ) {
 					wp_editor( $component['html'], 'wpawesomecomponents-' . $id, [
 						'media_buttons' => false,
 						'quicktags'     => false,
+						'editor_height' => 200,
 					] );
 					?>
 					<div class="wpac-modal-preview__content">

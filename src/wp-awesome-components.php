@@ -26,6 +26,7 @@ class Inc2734_WP_Awesome_Components {
 		add_action( 'media_buttons'         , [ $this, '_media_buttons' ] );
 		add_action( 'edit_form_after_editor', [ $this, '_edit_form_after_editor' ] );
 		add_action( 'admin_enqueue_scripts' , [ $this, '_admin_enqueue_scripts' ] );
+		add_filter( 'mce_external_plugins'  , [ $this, '_mce_external_plugins' ] );
 		add_filter( 'inc2734_wp_awesome_components_register_components', [ $this, '_register_components' ] );
 	}
 
@@ -81,6 +82,17 @@ class Inc2734_WP_Awesome_Components {
 			'wp-awesome-components',
 			home_url( str_replace( ABSPATH, '', __DIR__ ) . '/assets/css/app.css' )
 		);
+	}
+
+	/**
+	 * Added tinymce-noneditable plugin
+	 *
+	 * @param array $plugin_array
+	 * @return array
+	 */
+	public function _mce_external_plugins( $plugin_array ) {
+		$plugin_array['noneditable'] = home_url( str_replace( ABSPATH, '', __DIR__ ) . '/assets/js/tinymce/noneditable/plugin.min.js' );
+		return $plugin_array;
 	}
 
 	public function _register_components( $components ) {

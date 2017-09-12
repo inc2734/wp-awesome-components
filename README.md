@@ -4,11 +4,12 @@
 [![Latest Stable Version](https://poser.pugx.org/inc2734/wp-awesome-components/v/stable)](https://packagist.org/packages/inc2734/wp-awesome-components)
 [![License](https://poser.pugx.org/inc2734/wp-awesome-components/license)](https://packagist.org/packages/inc2734/wp-awesome-components)
 
-## Widgets
+## Components
 
 * Button
 * Alert
 * Balloon
+* Multi columns
 
 ## Install
 ```
@@ -27,3 +28,7 @@ new Inc2734_WP_Awesome_Components();
 ```
 
 The components don't have styles. So you need create CSS for the components.
+
+## Third party resources
+### TinyMCE | Noneditable Plugin
+https://www.tinymce.com/docs/plugins/noneditable/

@@ -10,14 +10,14 @@ return [
 		'id'    => 'balloon',
 		'label' => __( 'Balloon', 'inc2734-wp-awesome-components' ),
 		'html'  => sprintf(
-			'<div class="wpac-balloon">
+			'<div class="wpac-balloon mceNonEditable">
 				<div class="wpac-balloon__person">
-					<div class="wpac-balloon__figure">
+					<div class="wpac-balloon__figure mceEditable">
 						<img src="http://0.gravatar.com/avatar/cb3045d1eb66dda5eae9ae2f96edeee9?s=128&d=mm&r=g" alt="">
 					</div>
-					<div class="wpac-balloon__name">%1$s</div>
+					<div class="wpac-balloon__name mceEditable">%1$s</div>
 				</div>
-				<div class="wpac-balloon__body">
+				<div class="wpac-balloon__body mceEditable">
 					%2$s
 				</div>
 			</div>',
@@ -29,14 +29,14 @@ return [
 		'id'    => 'balloon--reverse',
 		'label' => __( 'Balloon (Reverse)', 'inc2734-wp-awesome-components' ),
 		'html'  => sprintf(
-			'<div class="wpac-balloon wpac-balloon--reverse">
+			'<div class="wpac-balloon wpac-balloon--reverse mceNonEditable">
 				<div class="wpac-balloon__person">
-					<div class="wpac-balloon__figure">
+					<div class="wpac-balloon__figure mceEditable">
 						<img src="http://0.gravatar.com/avatar/cb3045d1eb66dda5eae9ae2f96edeee9?s=128&d=mm&r=g" alt="">
 					</div>
-					<div class="wpac-balloon__name">%1$s</div>
+					<div class="wpac-balloon__name mceEditable">%1$s</div>
 				</div>
-				<div class="wpac-balloon__body">
+				<div class="wpac-balloon__body mceEditable">
 					%2$s
 				</div>
 			</div>',
