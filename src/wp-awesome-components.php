@@ -37,7 +37,7 @@ class Inc2734_WP_Awesome_Components {
 	 * @return void
 	 */
 	public function _media_buttons( $editor_id = 'content' ) {
-		if ( false === get_post_type_object( get_post_type() )->publicly_queryable ) {
+		if ( false === get_post_type_object( get_post_type() )->public ) {
 			return;
 		}
 		?>
@@ -55,7 +55,7 @@ class Inc2734_WP_Awesome_Components {
 	 * @return void
 	 */
 	public function _edit_form_after_editor() {
-		if ( false === get_post_type_object( get_post_type() )->publicly_queryable ) {
+		if ( false === get_post_type_object( get_post_type() )->public ) {
 			return;
 		}
 
