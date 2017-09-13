@@ -99,9 +99,8 @@ class Inc2734_WP_Awesome_Components {
 		foreach ( glob( __DIR__ . '/component/*.php' ) as $file ) {
 			$_components = include( $file );
 
-			foreach ( $_components as $component ) {
-				$components[ $component['id'] ] = [
-					'id'    => $component['id'],
+			foreach ( $_components as $component_id => $component ) {
+				$components[ $component_id ] = [
 					'label' => $component['label'],
 					'html'  => trim( $component['html'] ),
 				];

@@ -6,8 +6,7 @@
  */
 
 return [
-	[
-		'id'    => 'columns-1-1-2',
+	'columns-1-1-2' => [
 		'label' => __( 'columns (1/1/2)', 'inc2734-wp-awesome-components' ),
 		'html'  => sprintf(
 			'<div class="wpac-columns mceNonEditable">
@@ -27,8 +26,8 @@ return [
 			esc_html__( 'Columns', 'inc2734-wp-awesome-components' )
 		),
 	],
-	[
-		'id'    => 'columns-2-2-2',
+
+	'columns-2-2-2' => [
 		'label' => __( 'columns (2/2/2)', 'inc2734-wp-awesome-components' ),
 		'html'  => sprintf(
 			'<div class="wpac-columns mceNonEditable">
@@ -48,8 +47,8 @@ return [
 			esc_html__( 'Columns', 'inc2734-wp-awesome-components' )
 		),
 	],
-	[
-		'id'    => 'columns-1-1-3',
+
+	'columns-1-1-3' => [
 		'label' => __( 'columns (1/1/3)', 'inc2734-wp-awesome-components' ),
 		'html'  => sprintf(
 			'<div class="wpac-columns mceNonEditable">
@@ -74,8 +73,8 @@ return [
 			esc_html__( 'Columns', 'inc2734-wp-awesome-components' )
 		),
 	],
-	[
-		'id'    => 'columns-3-3-3',
+
+	'columns-3-3-3' => [
 		'label' => __( 'columns (3/3/3)', 'inc2734-wp-awesome-components' ),
 		'html'  => sprintf(
 			'<div class="wpac-columns mceNonEditable">
@@ -100,8 +99,8 @@ return [
 			esc_html__( 'Columns', 'inc2734-wp-awesome-components' )
 		),
 	],
-	[
-		'id'    => 'columns-1-1-4',
+
+	'columns-1-1-4' => [
 		'label' => __( 'columns (1/1/4)', 'inc2734-wp-awesome-components' ),
 		'html'  => sprintf(
 			'<div class="wpac-columns mceNonEditable">
@@ -131,8 +130,8 @@ return [
 			esc_html__( 'Columns', 'inc2734-wp-awesome-components' )
 		),
 	],
-	[
-		'id'    => 'columns-2-2-4',
+
+	'columns-2-2-4' => [
 		'label' => __( 'columns (2/2/4)', 'inc2734-wp-awesome-components' ),
 		'html'  => sprintf(
 			'<div class="wpac-columns mceNonEditable">

@@ -6,8 +6,7 @@
  */
 
 return [
-	[
-		'id'    => 'balloon',
+	'balloon' => [
 		'label' => __( 'Balloon', 'inc2734-wp-awesome-components' ),
 		'html'  => sprintf(
 			'<div class="wpac-balloon mceNonEditable">
@@ -25,8 +24,8 @@ return [
 			esc_html__( 'Balloon', 'inc2734-wp-awesome-components' )
 		),
 	],
-	[
-		'id'    => 'balloon--reverse',
+
+	'balloon--reverse' => [
 		'label' => __( 'Balloon (Reverse)', 'inc2734-wp-awesome-components' ),
 		'html'  => sprintf(
 			'<div class="wpac-balloon wpac-balloon--reverse mceNonEditable">

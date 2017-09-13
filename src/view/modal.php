@@ -7,25 +7,19 @@
 
 $components = apply_filters( 'inc2734_wp_awesome_components_register_components', [] );
 
-foreach ( $components as $id => $component ) {
-	if ( ! isset( $component['id'] ) ) {
-		unset( $components[ $id ] );
-		continue;
-	}
-	$component['id'] = trim( $component['id'] );
-
+foreach ( $components as $component_id => $component ) {
 	if ( ! isset( $component['label'] ) ) {
-		unset( $components[ $id ] );
+		unset( $components[ $component_id ] );
 		continue;
 	}
 
 	if ( ! isset( $component['html'] ) ) {
-		unset( $components[ $id ] );
+		unset( $components[ $component_id ] );
 		continue;
 	}
-	$component['html'] = trim( str_replace( [ "\r", "\n" ], '', $component['html'] ) );
+	$component['html'] = trim( str_replace( [ "\r", "\n" ], '', trim( $component['html'] ) ) );
 
-	$components[ $id ] = array_filter( $component );
+	$components[ $component_id ] = array_filter( $component );
 }
 
 $components = array_filter( $components );
@@ -38,22 +32,22 @@ if ( empty( $components ) ) {
 	<div class="wpac-modal__container">
 		<div class="wpac-modal__sidebar">
 			<ul class="wpac-modal-selector">
-				<?php foreach ( $components as $component ) : ?>
-					<li class="wpac-modal-selector__item" aria-controls="wpac-modal-preview-<?php echo esc_attr( $component['id'] ); ?>" aria-selected="false"><?php echo esc_html( $component['label'] ); ?></li>
+				<?php foreach ( $components as $component_id => $component ) : ?>
+					<li class="wpac-modal-selector__item" aria-controls="wpac-modal-preview-<?php echo esc_attr( $component_id ); ?>" aria-selected="false"><?php echo esc_html( $component['label'] ); ?></li>
 				<?php endforeach; ?>
 			</ul>
 		</div>
 		<div class="wpac-modal__main">
 			<span id="wpac-modal-close-btn" class="dashicons dashicons-no"></span>
 
-			<?php foreach ( $components as $id => $component ) : ?>
-				<div id="wpac-modal-preview-<?php echo esc_attr( $component['id'] ); ?>" class="wpac-modal-preview" aria-hidden="true">
+			<?php foreach ( $components as $component_id => $component ) : ?>
+				<div id="wpac-modal-preview-<?php echo esc_attr( $component_id ); ?>" class="wpac-modal-preview" aria-hidden="true">
 					<h2 class="wpac-modal-preview__title"><?php echo esc_html( $component['label'] ); ?></h2>
 					<?php
-					wp_editor( $component['html'], 'wpawesomecomponents-' . $id, [
+					wp_editor( $component['html'], 'wpawesomecomponents-' . $component_id, [
 						'media_buttons' => false,
 						'quicktags'     => false,
-						'editor_height' => 200,
+						'editor_height' => 280,
 					] );
 					?>
 					<div class="wpac-modal-preview__content">
