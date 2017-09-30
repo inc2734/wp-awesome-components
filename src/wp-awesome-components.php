@@ -5,6 +5,9 @@
  * @license GPL-2.0+
  */
 
+/**
+ * HTML components into WordPress WYSIWYG editor
+ */
 class Inc2734_WP_Awesome_Components {
 
 	public function __construct() {
@@ -61,7 +64,9 @@ class Inc2734_WP_Awesome_Components {
 
 		ob_start();
 		include( __DIR__ . '/view/modal.php' );
+		// @codingStandardsIgnoreStart
 		echo ob_get_clean();
+		// @codingStandardsIgnoreEnd
 	}
 
 	/**
