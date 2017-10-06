@@ -78,7 +78,7 @@ class Inc2734_WP_Awesome_Components {
 	public function _admin_enqueue_scripts() {
 		wp_enqueue_script(
 			'wp-awesome-components',
-			home_url( str_replace( ABSPATH, '', __DIR__ ) . '/assets/js/app.js' ),
+			site_url( str_replace( ABSPATH, '', __DIR__ ) . '/assets/js/app.js' ),
 			[ 'jquery' ],
 			false,
 			true
@@ -86,7 +86,7 @@ class Inc2734_WP_Awesome_Components {
 
 		wp_enqueue_style(
 			'wp-awesome-components',
-			home_url( str_replace( ABSPATH, '', __DIR__ ) . '/assets/css/app.css' )
+			site_url( str_replace( ABSPATH, '', __DIR__ ) . '/assets/css/app.css' )
 		);
 	}
 
@@ -97,8 +97,8 @@ class Inc2734_WP_Awesome_Components {
 	 * @return array
 	 */
 	public function _mce_external_plugins( $plugin_array ) {
-		$plugin_array['noneditable'] = home_url( str_replace( ABSPATH, '', __DIR__ ) . '/assets/js/tinymce/noneditable/plugin.min.js' );
-		$plugin_array['inserthtml']  = home_url( str_replace( ABSPATH, '', __DIR__ ) . '/assets/js/tinymce/inserthtml/plugin.js' );
+		$plugin_array['noneditable'] = site_url( str_replace( ABSPATH, '', __DIR__ ) . '/assets/js/tinymce/noneditable/plugin.min.js' );
+		$plugin_array['inserthtml']  = site_url( str_replace( ABSPATH, '', __DIR__ ) . '/assets/js/tinymce/inserthtml/plugin.js' );
 		return $plugin_array;
 	}
 
