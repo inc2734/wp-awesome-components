@@ -52,4 +52,22 @@ jQuery(function($) {
       $('.wpac-modal').attr('aria-hidden', 'true');
     });
   });
+
+  function setVisibilityLaunchButton() {
+    if ($('#wp-content-wrap').hasClass('tmce-active')) {
+      launchButton.show();
+    } else {
+      launchButton.hide();
+    }
+  }
+
+  setVisibilityLaunchButton();
+  $(window).load(function(event) {
+    setVisibilityLaunchButton();
+  });
+  $('#wp-content-wrap .wp-switch-editor').on('click', function() {
+    setTimeout(function() {
+      setVisibilityLaunchButton();
+    }, 100);
+  });
 });
