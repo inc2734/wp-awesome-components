@@ -26,11 +26,11 @@ class Inc2734_WP_Awesome_Components {
 			}
 		}
 
-		add_action( 'media_buttons'         , [ $this, '_media_buttons' ] );
+		add_action( 'media_buttons', [ $this, '_media_buttons' ] );
 		add_action( 'edit_form_after_editor', [ $this, '_edit_form_after_editor' ] );
-		add_action( 'admin_enqueue_scripts' , [ $this, '_admin_enqueue_scripts' ] );
-		add_filter( 'mce_external_plugins'  , [ $this, '_mce_external_plugins' ] );
-		add_filter( 'mce_buttons_2'         , [ $this, '_mce_buttons_2' ] );
+		add_action( 'admin_enqueue_scripts', [ $this, '_admin_enqueue_scripts' ] );
+		add_filter( 'mce_external_plugins', [ $this, '_mce_external_plugins' ] );
+		add_filter( 'mce_buttons_2', [ $this, '_mce_buttons_2' ] );
 		add_filter( 'inc2734_wp_awesome_components_register_components', [ $this, '_register_components' ] );
 	}
 
