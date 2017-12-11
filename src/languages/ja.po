@@ -2,85 +2,92 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://make.wordpress.org/polyglots/\n"
-"POT-Creation-Date: 2017-09-12 20:39+0900\n"
-"PO-Revision-Date: 2017-09-12 20:41+0900\n"
+"POT-Creation-Date: 2017-12-11 06:10:06+00:00\n"
+"PO-Revision-Date: 2017-12-11 15:10+0900\n"
 "Last-Translator: inc2734 <inc@2inc.org>\n"
 "Language-Team: \n"
 "Language: ja_JP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.4\n"
+"X-Generator: Poedit 2.0.4\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: component/alert.php:11 component/alert.php:14 component/alert.php:22
-#: component/alert.php:30
+#: component/alert.php:10 component/alert.php:13 component/alert.php:21
+#: component/alert.php:29
 msgid "Alert"
 msgstr "アラート"
 
-#: component/alert.php:19
+#: component/alert.php:18
 msgid "Alert (Warning)"
 msgstr "アラート（Warning）"
 
-#: component/alert.php:27
+#: component/alert.php:26
 msgid "Alert (Success)"
 msgstr "アラート（Success）"
 
-#: component/balloon.php:11 component/balloon.php:25 component/balloon.php:44
+#: component/balloon.php:10 component/balloon.php:24 component/balloon.php:43
 msgid "Balloon"
 msgstr "吹き出し"
 
-#: component/balloon.php:24 component/balloon.php:43
+#: component/balloon.php:23 component/balloon.php:42
 msgid "Name"
 msgstr "名前"
 
-#: component/balloon.php:30
+#: component/balloon.php:29
 msgid "Balloon (Reverse)"
 msgstr "吹き出し（反転）"
 
-#: component/btn.php:11 component/btn.php:14 component/btn.php:22
+#: component/btn.php:10 component/btn.php:13 component/btn.php:21
 msgid "Button"
 msgstr "ボタン"
 
-#: component/btn.php:19
+#: component/btn.php:18
 msgid "Button (Full size)"
 msgstr "ボタン（フルサイズ）"
 
-#: component/columns.php:11
+#: component/columns.php:10
 msgid "columns (1/1/2)"
 msgstr "カラム（1/1/2）"
 
-#: component/columns.php:27 component/columns.php:48 component/columns.php:74
-#: component/columns.php:100 component/columns.php:131
-#: component/columns.php:162
+#: component/columns.php:26 component/columns.php:47 component/columns.php:73
+#: component/columns.php:99 component/columns.php:130 component/columns.php:161
 msgid "Columns"
 msgstr "カラム分割"
 
-#: component/columns.php:32
+#: component/columns.php:31
 msgid "columns (2/2/2)"
 msgstr "カラム（2/2/2）"
 
-#: component/columns.php:53
+#: component/columns.php:52
 msgid "columns (1/1/3)"
 msgstr "カラム（1/1/3）"
 
-#: component/columns.php:79
+#: component/columns.php:78
 msgid "columns (3/3/3)"
 msgstr "カラム（3/3/3）"
 
-#: component/columns.php:105
+#: component/columns.php:104
 msgid "columns (1/1/4)"
 msgstr "カラム（1/1/4）"
 
-#: component/columns.php:136
+#: component/columns.php:135
 msgid "columns (2/2/4)"
 msgstr "カラム（2/2/4）"
 
-#: view/modal.php:66
+#: component/section.php:10 component/section.php:20 component/section.php:35
+msgid "Section"
+msgstr "セクション"
+
+#: component/section.php:25
+msgid "Section (Inverse)"
+msgstr "セクション（反転）"
+
+#: view/modal.php:60
 msgid "Insert into post"
 msgstr "投稿に挿入"
 
-#: wp-awesome-components.php:47
+#: wp-awesome-components.php:51
 msgid "Add Components"
 msgstr "コンポーネントを追加"
