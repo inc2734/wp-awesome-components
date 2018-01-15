@@ -84,6 +84,14 @@ class Inc2734_WP_Awesome_Components {
 			true
 		);
 
+		wp_localize_script(
+			'wp-awesome-components',
+			'wp_awesome_components_text',
+			[
+				'insert_html' => esc_html__( 'Insert HTML', 'inc2734-wp-awesome-components' ),
+			]
+		);
+
 		wp_enqueue_style(
 			'wp-awesome-components',
 			site_url( str_replace( ABSPATH, '', __DIR__ ) . '/assets/css/app.css' )

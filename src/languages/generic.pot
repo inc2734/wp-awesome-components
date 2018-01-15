@@ -1,14 +1,14 @@
-# Copyright (C) 2017 {package-name}
+# Copyright (C) 2018 {package-name}
 # This file is distributed under the same license as the {package-name} package.
 msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: https://make.wordpress.org/polyglots/\n"
-"POT-Creation-Date: 2017-12-11 06:10:06+00:00\n"
+"POT-Creation-Date: 2018-01-15 06:30:05+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
@@ -88,4 +88,8 @@ msgstr ""
 
 #: wp-awesome-components.php:51
 msgid "Add Components"
+msgstr ""
+
+#: wp-awesome-components.php:91
+msgid "Insert HTML"
 msgstr ""

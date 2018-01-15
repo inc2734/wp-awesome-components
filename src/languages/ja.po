@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://make.wordpress.org/polyglots/\n"
-"POT-Creation-Date: 2017-12-11 06:10:06+00:00\n"
-"PO-Revision-Date: 2017-12-11 15:10+0900\n"
+"POT-Creation-Date: 2018-01-15 06:30:05+00:00\n"
+"PO-Revision-Date: 2018-01-15 15:30+0900\n"
 "Last-Translator: inc2734 <inc@2inc.org>\n"
 "Language-Team: \n"
 "Language: ja_JP\n"
@@ -91,3 +91,7 @@ msgstr "投稿に挿入"
 #: wp-awesome-components.php:51
 msgid "Add Components"
 msgstr "コンポーネントを追加"
+
+#: wp-awesome-components.php:91
+msgid "Insert HTML"
+msgstr "HTMLを挿入"
