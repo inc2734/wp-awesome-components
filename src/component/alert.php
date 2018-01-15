@@ -9,7 +9,9 @@ return [
 	'alert' => [
 		'label' => __( 'Alert', 'inc2734-wp-awesome-components' ),
 		'html'  => sprintf(
-			'<div class="wpac-alert">%1$s</div>',
+			'<div class="wpac-alert mceNonEditable">
+				<div class="mceEditable">%1$s</div>
+			</div>',
 			esc_html__( 'Alert', 'inc2734-wp-awesome-components' )
 		),
 	],
@@ -17,7 +19,9 @@ return [
 	'alert--warning' => [
 		'label' => __( 'Alert (Warning)', 'inc2734-wp-awesome-components' ),
 		'html'  => sprintf(
-			'<div class="wpac-alert wpac-alert--warning">%1$s</div>',
+			'<div class="wpac-alert wpac-alert--warning mceNonEditable">
+				<div class="mceEditable">%1$s</div>
+			</div>',
 			esc_html__( 'Alert', 'inc2734-wp-awesome-components' )
 		),
 	],
@@ -25,7 +29,9 @@ return [
 	'alert--success' => [
 		'label' => __( 'Alert (Success)', 'inc2734-wp-awesome-components' ),
 		'html'  => sprintf(
-			'<div class="wpac-alert wpac-alert--success">%1$s</div>',
+			'<div class="wpac-alert wpac-alert--success mceNonEditable">
+				<div class="mceEditable">%1$s</div>
+			</div>',
 			esc_html__( 'Alert', 'inc2734-wp-awesome-components' )
 		),
 	],
