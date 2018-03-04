@@ -7,7 +7,7 @@
       onclick: function() {
         var selectedText = editor.selection.getContent();
         if (selectedText) {
-          editor.execCommand('mceInsertContent', 0, '<span class="wpac-highlighter">' + selectedText + '</span>');
+          editor.selection.setContent('<span class="wpac-highlighter">' + selectedText + '</span>');
         }
       }
     });
