@@ -62,9 +62,12 @@ class Awesome_Components {
 	 * @return void
 	 */
 	public function _admin_enqueue_scripts() {
+		$abspath = str_replace( '\\', '/', ABSPATH );
+		$__dir__ = str_replace( '\\', '/', __DIR__ );
+
 		wp_enqueue_script(
 			'wp-awesome-components',
-			site_url( str_replace( ABSPATH, '', __DIR__ ) . '/assets/js/app.js' ),
+			site_url( str_replace( $abspath, '', $__dir__ ) . '/assets/js/app.js' ),
 			[ 'jquery' ],
 			false,
 			true
@@ -75,12 +78,13 @@ class Awesome_Components {
 			'wp_awesome_components_text',
 			[
 				'insert_html' => esc_html__( 'Insert HTML', 'inc2734-wp-awesome-components' ),
+				'highlighter' => esc_html__( 'Highlighter', 'inc2734-wp-awesome-components' ),
 			]
 		);
 
 		wp_enqueue_style(
 			'wp-awesome-components',
-			site_url( str_replace( ABSPATH, '', __DIR__ ) . '/assets/css/app.css' )
+			site_url( str_replace( $abspath, '', $__dir__ ) . '/assets/css/app.css' )
 		);
 	}
 
@@ -91,8 +95,12 @@ class Awesome_Components {
 	 * @return array
 	 */
 	public function _mce_external_plugins( $plugin_array ) {
-		$plugin_array['noneditable'] = site_url( str_replace( ABSPATH, '', __DIR__ ) . '/assets/js/tinymce/noneditable/plugin.min.js' );
-		$plugin_array['inserthtml']  = site_url( str_replace( ABSPATH, '', __DIR__ ) . '/assets/js/tinymce/inserthtml/plugin.js' );
+		$abspath = str_replace( '\\', '/', ABSPATH );
+		$__dir__ = str_replace( '\\', '/', __DIR__ );
+
+		$plugin_array['noneditable'] = site_url( str_replace( $abspath, '', $__dir__ ) . '/assets/js/tinymce/noneditable/plugin.min.js' );
+		$plugin_array['inserthtml']  = site_url( str_replace( $abspath, '', $__dir__ ) . '/assets/js/tinymce/inserthtml/plugin.js' );
+		$plugin_array['highlighter'] = site_url( str_replace( $abspath, '', $__dir__ ) . '/assets/js/tinymce/highlighter/plugin.js' );
 		return $plugin_array;
 	}
 
@@ -105,6 +113,7 @@ class Awesome_Components {
 	public function _mce_buttons_2( $buttons ) {
 		return array_merge( $buttons, [
 			'inserthtml',
+			'highlighter',
 		] );
 	}
 

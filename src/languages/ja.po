@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://make.wordpress.org/polyglots/\n"
-"POT-Creation-Date: 2018-01-15 06:30:05+00:00\n"
-"PO-Revision-Date: 2018-01-15 15:30+0900\n"
+"POT-Creation-Date: 2018-03-04 11:47:55+00:00\n"
+"PO-Revision-Date: 2018-03-04 20:48+0900\n"
 "Last-Translator: inc2734 <inc@2inc.org>\n"
 "Language-Team: \n"
 "Language: ja_JP\n"
@@ -14,16 +14,28 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: component/alert.php:10 component/alert.php:13 component/alert.php:21
-#: component/alert.php:29
+#: Awesome_Components.php:37
+msgid "Add Components"
+msgstr "コンポーネントを追加"
+
+#: Awesome_Components.php:80
+msgid "Insert HTML"
+msgstr "HTMLを挿入"
+
+#: Awesome_Components.php:81
+msgid "Highlighter"
+msgstr "蛍光ペン"
+
+#: component/alert.php:10 component/alert.php:15 component/alert.php:25
+#: component/alert.php:35
 msgid "Alert"
 msgstr "アラート"
 
-#: component/alert.php:18
+#: component/alert.php:20
 msgid "Alert (Warning)"
 msgstr "アラート（Warning）"
 
-#: component/alert.php:26
+#: component/alert.php:30
 msgid "Alert (Success)"
 msgstr "アラート（Success）"
 
@@ -87,11 +99,3 @@ msgstr "セクション（反転）"
 #: view/modal.php:60
 msgid "Insert into post"
 msgstr "投稿に挿入"
-
-#: wp-awesome-components.php:51
-msgid "Add Components"
-msgstr "コンポーネントを追加"
-
-#: wp-awesome-components.php:91
-msgid "Insert HTML"
-msgstr "HTMLを挿入"
