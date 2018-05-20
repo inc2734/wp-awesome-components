@@ -117,6 +117,7 @@
  * Preview area - content
  */
 .wpac-modal-preview__content {
+  display: none;
 }
 
 /**
