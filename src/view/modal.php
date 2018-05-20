@@ -40,16 +40,24 @@ if ( empty( $components ) ) {
 		<div class="wpac-modal__main">
 			<span id="wpac-modal-close-btn" class="dashicons dashicons-no"></span>
 
+			<textarea class="wpac-modal__iframe-style" style="display: none">
+				<?php
+				$styleseets = get_editor_stylesheets();
+				foreach ( $styleseets as $stylesheet ) {
+					// @codingStandardsIgnoreStart
+					printf( '<link rel="stylesheet" href="%1$s">', esc_url( $stylesheet ) );
+					// @codingStandardsIgnoreEnd
+				}
+
+				$mce_init = apply_filters( 'tiny_mce_before_init', [], null );
+				printf( '<style>%1$s</style>', esc_textarea( $mce_init['content_style'] ) );
+				?>
+			</textarea>
+
 			<?php foreach ( $components as $component_id => $component ) : ?>
 				<div id="wpac-modal-preview-<?php echo esc_attr( $component_id ); ?>" class="wpac-modal-preview" aria-hidden="true">
 					<h2 class="wpac-modal-preview__title"><?php echo esc_html( $component['label'] ); ?></h2>
-					<?php
-					wp_editor( $component['html'], 'wpawesomecomponents-' . $component_id, [
-						'media_buttons' => false,
-						'quicktags'     => false,
-						'editor_height' => 280,
-					] );
-					?>
+					<iframe class="wpac-modal-preview__iframe"></iframe>
 					<div class="wpac-modal-preview__content">
 						<?php echo wp_kses_post( $component['html'] ); ?>
 					</div>
