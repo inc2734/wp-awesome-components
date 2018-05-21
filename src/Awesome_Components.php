@@ -48,7 +48,13 @@ class Awesome_Components {
 	 * @return void
 	 */
 	public function _edit_form_after_editor() {
-		if ( false === get_post_type_object( get_post_type() )->public ) {
+		$post_type = get_post_type();
+
+		if ( ! $post_type ) {
+			return;
+		}
+
+		if ( false === get_post_type_object( $post_type )->public ) {
 			return;
 		}
 
