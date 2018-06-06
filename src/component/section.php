@@ -10,7 +10,7 @@ return [
 		'label' => __( 'Section', 'inc2734-wp-awesome-components' ),
 		'html'  => sprintf(
 			'<div class="wpac-section mceNonEditable">
-				<div class="wpac-section__container">
+				<div class="wpac-section__container mceNonEditable">
 					<h2 class="wpac-section__title mceEditable">%1$s</h2>
 					<div class="wpac-section__body mceEditable">
 						%1$s
@@ -25,7 +25,7 @@ return [
 		'label' => __( 'Section (Inverse)', 'inc2734-wp-awesome-components' ),
 		'html'  => sprintf(
 			'<div class="wpac-section wpac-section--inverse mceNonEditable">
-				<div class="wpac-section__container">
+				<div class="wpac-section__container mceNonEditable">
 					<h2 class="wpac-section__title mceEditable">%1$s</h2>
 					<div class="wpac-section__body mceEditable">
 						%1$s

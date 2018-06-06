@@ -9,7 +9,11 @@ return [
 	'btn' => [
 		'label' => __( 'Button', 'inc2734-wp-awesome-components' ),
 		'html'  => sprintf(
-			'<a class="wpac-btn mceNonEditable" href="#"><span class="mceEditable">%1$s</span></a>',
+			'<a class="wpac-btn mceNonEditable" href="#">
+				<span class="mceNonEditable">
+					<span class="mceEditable">%1$s
+				</span>
+			</a>',
 			esc_html__( 'Button', 'inc2734-wp-awesome-components' )
 		),
 	],
@@ -17,7 +21,11 @@ return [
 	'btn--full' => [
 		'label' => __( 'Button (Full size)', 'inc2734-wp-awesome-components' ),
 		'html'  => sprintf(
-			'<a class="wpac-btn wpac-btn--full mceNonEditable" href="#"><span class="mceEditable">%1$s</span></a>',
+			'<a class="wpac-btn wpac-btn--full mceNonEditable" href="#">
+				<span class="mceNonEditable">
+					<span class="mceEditable">%1$s
+				</span>
+			</a>',
 			esc_html__( 'Button', 'inc2734-wp-awesome-components' )
 		),
 	],

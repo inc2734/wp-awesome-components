@@ -10,7 +10,7 @@ return [
 		'label' => __( 'Balloon', 'inc2734-wp-awesome-components' ),
 		'html'  => sprintf(
 			'<div class="wpac-balloon mceNonEditable">
-				<div class="wpac-balloon__person">
+				<div class="wpac-balloon__person mceNonEditable">
 					<div class="wpac-balloon__figure mceEditable">
 						<img src="https://0.gravatar.com/avatar/cb3045d1eb66dda5eae9ae2f96edeee9?s=128&d=mm&r=g" alt="">
 					</div>
@@ -29,7 +29,7 @@ return [
 		'label' => __( 'Balloon (Reverse)', 'inc2734-wp-awesome-components' ),
 		'html'  => sprintf(
 			'<div class="wpac-balloon wpac-balloon--reverse mceNonEditable">
-				<div class="wpac-balloon__person">
+				<div class="wpac-balloon__person mceNonEditable">
 					<div class="wpac-balloon__figure mceEditable">
 						<img src="https://0.gravatar.com/avatar/cb3045d1eb66dda5eae9ae2f96edeee9?s=128&d=mm&r=g" alt="">
 					</div>
