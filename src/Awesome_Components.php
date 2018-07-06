@@ -30,7 +30,13 @@ class Awesome_Components {
 	 * @return void
 	 */
 	public function _media_buttons( $editor_id = 'content' ) {
-		if ( false === get_post_type_object( get_post_type() )->public ) {
+		$post_type = get_post_type();
+		if ( ! $post_type ) {
+			return;
+		}
+
+		$post_type_object = get_post_type_object( $post_type );
+		if ( ! $post_type_object || ! $post_type_object->public ) {
 			return;
 		}
 		?>
