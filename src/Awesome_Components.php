@@ -80,11 +80,15 @@ class Awesome_Components {
 		$abspath = str_replace( '\\', '/', ABSPATH );
 		$__dir__ = str_replace( '\\', '/', __DIR__ );
 
+		$relative_path = str_replace( $abspath, '', $__dir__ ) . '/assets/js/app.js';
+		$src  = site_url( $relative_path );
+		$path = $abspath . $relative_path;
+
 		wp_enqueue_script(
 			'wp-awesome-components',
-			site_url( str_replace( $abspath, '', $__dir__ ) . '/assets/js/app.js' ),
+			$src,
 			[ 'jquery' ],
-			false,
+			filemtime( $path ),
 			true
 		);
 
@@ -97,9 +101,15 @@ class Awesome_Components {
 			]
 		);
 
+		$relative_path = str_replace( $abspath, '', $__dir__ ) . '/assets/css/app.css';
+		$src  = site_url( $relative_path );
+		$path = $abspath . $relative_path;
+
 		wp_enqueue_style(
 			'wp-awesome-components',
-			site_url( str_replace( $abspath, '', $__dir__ ) . '/assets/css/app.css' )
+			$src,
+			[],
+			filemtime( $path )
 		);
 	}
 
