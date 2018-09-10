@@ -77,12 +77,9 @@ class Awesome_Components {
 	 * @return void
 	 */
 	public function _admin_enqueue_scripts() {
-		$abspath = str_replace( '\\', '/', ABSPATH );
-		$__dir__ = str_replace( '\\', '/', __DIR__ );
-
-		$relative_path = str_replace( $abspath, '', $__dir__ ) . '/assets/js/app.js';
-		$src  = site_url( $relative_path );
-		$path = $abspath . $relative_path;
+		$relative_path = '/vendor/inc2734/wp-awesome-components/src/assets/js/app.js';
+		$src  = get_template_directory_uri() . $relative_path;
+		$path = get_template_directory() . $relative_path;
 
 		wp_enqueue_script(
 			'wp-awesome-components',
@@ -101,9 +98,9 @@ class Awesome_Components {
 			]
 		);
 
-		$relative_path = str_replace( $abspath, '', $__dir__ ) . '/assets/css/app.css';
-		$src  = site_url( $relative_path );
-		$path = $abspath . $relative_path;
+		$relative_path = '/vendor/inc2734/wp-awesome-components/src/assets/css/app.css';
+		$src  = get_template_directory_uri() . $relative_path;
+		$path = get_template_directory() . $relative_path;
 
 		wp_enqueue_style(
 			'wp-awesome-components',
@@ -120,12 +117,9 @@ class Awesome_Components {
 	 * @return array
 	 */
 	public function _mce_external_plugins( $plugin_array ) {
-		$abspath = str_replace( '\\', '/', ABSPATH );
-		$__dir__ = str_replace( '\\', '/', __DIR__ );
-
-		$plugin_array['noneditable'] = site_url( str_replace( $abspath, '', $__dir__ ) . '/assets/js/tinymce/noneditable/plugin.min.js' );
-		$plugin_array['inserthtml']  = site_url( str_replace( $abspath, '', $__dir__ ) . '/assets/js/tinymce/inserthtml/plugin.js' );
-		$plugin_array['highlighter'] = site_url( str_replace( $abspath, '', $__dir__ ) . '/assets/js/tinymce/highlighter/plugin.js' );
+		$plugin_array['noneditable'] = get_template_directory_uri() . '/vendor/inc2734/wp-awesome-components/src/assets/js/tinymce/noneditable/plugin.min.js';
+		$plugin_array['inserthtml']  = get_template_directory_uri() . '/vendor/inc2734/wp-awesome-components/src/assets/js/tinymce/inserthtml/plugin.js';
+		$plugin_array['highlighter'] = get_template_directory_uri() . '/vendor/inc2734/wp-awesome-components/src/assets/js/tinymce/highlighter/plugin.js';
 		return $plugin_array;
 	}
 
