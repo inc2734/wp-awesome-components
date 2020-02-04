@@ -130,10 +130,13 @@ class Awesome_Components {
 	 * @return json
 	 */
 	public function _mce_buttons_2( $buttons ) {
-		return array_merge( $buttons, [
-			'inserthtml',
-			'highlighter',
-		] );
+		return array_merge(
+			$buttons,
+			[
+				'inserthtml',
+				'highlighter',
+			]
+		);
 	}
 
 	public function _register_components( $components ) {

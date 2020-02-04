@@ -65,7 +65,7 @@ if ( empty( $components ) ) {
 			<?php endforeach; ?>
 
 			<div class="wpac-modal__action">
-				<button id="wpac-modal-insert-btn" class="button button-primary"><?php esc_html_e( 'Insert into post' ); ?></button>
+				<button id="wpac-modal-insert-btn" class="button button-primary"><?php esc_html_e( 'Insert into post', 'inc2734-wp-awesome-components' ); ?></button>
 			</div>
 		</div>
 	</div>
